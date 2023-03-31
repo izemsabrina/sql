@@ -17,6 +17,29 @@ FLOAT
 -- chiffre spéciaux
 BOOLEAN 0 1
 -- DATES
+
 TIME HH:MM:SS
-DATA  AAA-MM-JJ
+DATE  AAA-MM-JJ
 DATATIME AAAA-MM-JJ HH:MM:SS
+-- créer latable articles 
+-- 5 COLONNES
+-- titre texte max255
+-- contenu max 65 000 lettres
+-- like chiffre entier mx 4000 000 000
+-- dt_publication année mois et jour
+
+
+CREATE TABLE IF NOT EXISTS articles (
+titre VARCHAR(255),
+contenu TEXT,
+auteur VARCHAR(20),
+like INT,
+dt_publication DATE);
+
+CREATE TABLE IF NOT EXISTS exo2 (
+id INT,
+dt_publication DATETIME,
+dt_mise_a_jour DATE,
+etat BOOLEAN,
+texte MEDIUMTEXT,
+prix DECIMAL);
