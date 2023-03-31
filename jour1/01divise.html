@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>pomme</li>
+        <li>poire</li>
+        <li>banane</li>
+        <li>abricot</li>
+    </ul>
+    <ul class="fruit"></ul>
+    <script>
+        document.querySelector(".fruit").innerHTML=`
+                                    <ul>
+                                <li>pomme</li>
+                                <li>poire</li>
+                                <li>banane</li>
+                                <li>abricot</li>
+                            </ul>`
+    </script>
+    <u class="fruit2"></u>
+    <script>
+        const fruits=["pomme","banane","poire"];
+        let html="";
+        for(let fruit of fruits){
+            html+=`<li>${fruit}</li>`
+        }
+        document.querySelector(".fruit2").innerHTML=HTMLButtonElement
+
+    </script>
+    <div></div>
+    <script>
+        const utilisateurs=[
+            {id:1,nom:"alain",dt:"01/01/2022",isAdmin:true},
+            {id:2,nom:"benoit",dt:"01/01/2020",isAdmin:false},
+            {id:3,nom:"celine",dt:"01/01/2021",isAdmin:true},
+        ]
+        
+
+    </script>
+    <!--sql=> structured query langage
+    Codd=> ingenieur de IBM  -->
+</body>
+</html>
