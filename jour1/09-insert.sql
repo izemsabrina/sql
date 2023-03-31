@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS fleurs(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nom VARCHAR (50),
+description TEXT,
+status BOOLEAN,
+dt_creation DATE
+);
